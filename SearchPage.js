@@ -157,7 +157,9 @@ export default class App extends Component {
       error => this.setState({ error: error.message }),
       { enableHighAccuracy: false, timeout: 20000 }
     );
-    Geocoder.init('AIzaSyAFAB6JvhLZ2q3mtUvkiqw893SOdWmeS7I', {
+    
+    //Write your API Key in here
+    Geocoder.init('YOUR API KEY', {
       language: 'ko',
     });
     Geocoder.from(
